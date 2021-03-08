@@ -30,6 +30,12 @@
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
         
         /*
+         createPlatform(x, y, scaleX, scaleY);
+
+         x: The x coordinate for the platform.
+         y: The y coordinate for the platform.
+         scaleX: OPTIONAL The scale factor on the x-axis, this value will stretch the platform in width
+         scaleY: OPTIONAL The svale factor on the y-axis, this value will stretch the platform in height
          * ground : here, we create a floor. Given the width of of the platform 
          * asset, giving it a scaleX and scaleY of 2 will stretch it across the 
          * bottom of the game.
@@ -37,8 +43,9 @@
         createPlatform(0, game.world.height - 32, 3, 2);    // DO NOT DELETE
 
         // example:
-        createPlatform(400, 250);
-        createPlatform(170, 460, 0.5);
+        createPlatform(400, 460);           // normal platform
+        createPlatform(270, 460, 0.6);      // small horizontal platform (30% of the normal width)
+        createPlatform(300, 300, 0.5, 20)   // tall vertical wall(30% the normal width and 10x the height )
         
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
