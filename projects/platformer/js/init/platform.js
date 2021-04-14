@@ -44,8 +44,8 @@
 
         // example:
         createPlatform(400, 460);           // normal platform
-        createPlatform(270, 460, 0.6);      // small horizontal platform (30% of the normal width)
-        createPlatform(300, 300, 0.5, 20)   // tall vertical wall(30% the normal width and 10x the height )
+        createPlatform(270, 460, 0.2);      // small horizontal platform (30% of the normal width)
+        createPlatform(250, 200, 0.1, 1);   // tall vertical wall(30% the normal width and 10x the height )
         
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
