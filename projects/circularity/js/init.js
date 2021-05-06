@@ -48,19 +48,17 @@ var init = function (window) {
         */
         function update() {
             // TODO 4 : Update the circle's position //
-            physikz.updatePosition( );
+            
             
             // TODO 5 : Call game.checkCirclePosition() on your circles.
-            game.checkCirclePosition( /* Your Bracket Notation HERE */ );
-            game.checkCirclePosition( /* Your Bracket Notation HERE */ );
-            game.checkCirclePosition( /* Your Bracket Notation HERE */ );
-            game.checkCirclePosition( /* Your Bracket Notation HERE */ );
-            game.checkCirclePosition( /* Your Bracket Notation HERE */ );
+           
 
             // TODO 8 : Iterate over the array
            
             for (var i = 0; i < myArray.length; i++) {
     var eachValue = myArray[i];
+                physikz.updatePosition(eachCircle)
+                game.checkCirclePosition(eachCircle)
         }
     
         /* 
@@ -76,10 +74,17 @@ var init = function (window) {
             }
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
-            if (circle.y > canvas,height) {
+            var rightEdge = circle.x + circle.radius;
+
+            if (circle.y > canvas.height) {
                 circle.y = 0;
             }
-            if (circle.x > )
+            if (circle.x < 0) {
+                circle.x = 0;
+            }
+            if (circle.y < 0) {
+                circle.y = 0;
+            }
             
             
 
